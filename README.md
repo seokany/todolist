@@ -1,68 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Component
 
-## Available Scripts
+## Introduction
+React는 UI(User-Interface)를 만들기 위한 자바스크립트 Library입니다. React가 DOM에 접근을 하는 도구들을 제공해준다는 점은 기본 JavaScript 또는 jQuery와 같지만, 언어의 구조가 사람의 생각 구조에 가깝게 직관적이라는 점(Declarative)에서 큰 장점이 있습니다. (참고로 Facebook이 만들었습니다)
 
-In the project directory, you can run:
+## Objectives
+* React Component들이 어떻게 소통하는지 이해합니다.
+* JSX와 ES6에 대해서 학습합니다.
+* Props 사용법을 익혀 봅니다.
+* State의 사용법을 익혀 봅니다.
+* React component 내에서 event 처리 방법에대해 알아봅니다.
+* Functional component 와 Class component에 대해 학습합니다.
+## Setup
+> NPX 와 Create-React-App 리액트 프로젝트를 시작해 봅니다. NPX 는 npm 5.6버전 이후부터 제공되는 package manger입니다. Create-React-App 은 React의 세팅을 미리 해 놓은 공식 boiler plate입니다.
 
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. 터미널에서 $ npx create-react-app todolist 를 실행시킵니다.
+2. 만들어진 리액트 프로젝트 todolist 로 이동합니다.
+3. $npm start 명령어를 실행 시킵니다.
+4. 브라우저가 자동으로 열릴 것입니다. 앞으로의 작업은 브라우저를 켜두신 상태에서 진행합니다.
