@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const HelloWorld = () => (
+    <div>HelloWorld</div>    
+)
+const OtherWorld = () => (
+    <div>될까?</div>
+)
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//nested
+const SuperWorld = () => (
+    // <div>슈퍼월드! <HelloWorld/></div>
+    <div>
+        <div>easy peasy</div>
+        <HelloWorld/>
+        <OtherWorld/>
+        <AnotherWorld/>
+    </div>
+)
+
+// 위 아래 는 상관없는듯;;;
+const AnotherWorld = ( ) => (
+    <div>아래 놔도 될까?</div>
+)
+
+
+
+ReactDOM.render(<SuperWorld/>, document.getElementById("root"));
+
